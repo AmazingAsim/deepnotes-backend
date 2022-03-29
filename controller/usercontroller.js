@@ -61,7 +61,7 @@ let login=async (req,res)=>{
     }
     catch(err){
         console.log('error'+err)
-        res.send('controller error log'+err);
+        res.send('controller error ooglog'+err);
     }
 }
 
