@@ -2,6 +2,7 @@ let jwt=require('jsonwebtoken');
 let verifytoken= async (req,res,next)=>{
     let token=req.headers.authorization;
     if(!token){
+        console.log('illigal attempt')
         res.send('illegal attempt')
     }
     try{

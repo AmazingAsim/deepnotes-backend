@@ -22,7 +22,7 @@ let adduser= async (req,res)=>{
            console.log('try initiated');
           let result=await userrepo.adduser(user);
           console.log('inside cojtrol try \n'+result);
-          res.send('account created successfully');
+          res.json({"res":"data stored successfully "})
           console.log('try compleated in controll')
          
         
@@ -70,6 +70,7 @@ let currentuser=async (req,res)=>{
   let result= await userrepo.currentuser(email);
 
   if(result!=null){
+      console.log('its woredfdfkdf')
       res.send(result)
   }
 

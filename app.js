@@ -10,7 +10,7 @@ let port=process.env.PORT || 4040
 
 
 app.use(express.json());
-app.use(express.urlencoded());
+//app.use(express.urlencoded());
 
 app.use(cors({
     origin:"*",
@@ -24,5 +24,5 @@ app.get('/',(req,res)=>{
 
 app.use('/api',userroute)
 
-
+//bla
 app.listen(port)
